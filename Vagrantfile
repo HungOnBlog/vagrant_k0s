@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
     node.vm.box_version       = "3.3.0"
     node.vm.hostname          = "xmaster.example.com"
 
-    node.vm.network "private_network", ip: "192.168.56.100"
+    node.vm.network "private_network", ip: "192.168.56.10"
 
     node.vm.provider :virtualbox do |v|
       v.name    = "xmaster"
@@ -41,7 +41,7 @@ Vagrant.configure(2) do |config|
       node.vm.box_version       = "3.3.0"
       node.vm.hostname          = "xworker#{i}.example.com"
 
-      node.vm.network "private_network", ip: "192.168.56.10#{i}"
+      node.vm.network "private_network", ip: "192.168.56.1#{i}"
 
       node.vm.provider :virtualbox do |v|
         v.name    = "xworker#{i}"
