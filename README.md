@@ -176,21 +176,21 @@ metadata:
 spec:
   hosts:
   - ssh:
-      address: 192.168.56.100
+      address: 192.168.56.10
       user: root
       port: 22
       keyPath: <path-to-you-ssh-key>
     role: controller
     privateInterface: eth1
   - ssh:
-      address: 192.168.56.101
+      address: 192.168.56.11
       user: root
       port: 22
       keyPath: <path-to-you-ssh-key>
     role: worker
     privateInterface: eth1
   - ssh:
-      address: 192.168.56.102
+      address: 192.168.56.12
       user: root
       port: 22
       keyPath: <path-to-you-ssh-key>
